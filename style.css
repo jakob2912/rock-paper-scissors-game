@@ -1,11 +1,30 @@
 body{
-  background-color: rgb(25,25,25);
+  background-color: hsl(0, 0%, 5%);
   color: white;
-  font-family: Arial;       
+  font-family: Arial; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  transition: all 0.2s ease;    
 }
+
+main {
+  background-color: hsl(0, 0%, 20%);
+  padding: 2rem;
+  border-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
 .title {
   font-size: 30px;
   font-weight: bold;
+  transition: all 0.2s ease;
 }
 .move-icon{
   height: 50px;
@@ -18,11 +37,22 @@ body{
   border-radius: 60px;
   margin-right: 10px;
   cursor: pointer; 
+  transition: all 0.2s ease;
 }
+
+#result-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
 .result{
   font-size: 25px;
   font-weight: bold;
   margin-top: 50px;
+  transition: all 0.2s ease;
 }
 .score{
   margin-top: 60px;
@@ -34,6 +64,7 @@ body{
   font-size: 15px;
   padding: 8px 15px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .reset-confirmation{
@@ -46,4 +77,19 @@ body{
   width: 50px;
   border: none;
   margin-left: 10px;
+}
+
+footer {
+  margin-top: 20vh;
+}
+
+#main-page-ref a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#main-page-ref a:hover {
+  color: lightblue;
+  text-decoration: underline;
 }
